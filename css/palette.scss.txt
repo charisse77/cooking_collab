@@ -1,0 +1,4 @@
+$brightGreen: #D8F3DC;
+$lightGreen: #B7E4C7;
+$medGreen: #40916C;
+$darkGreen: #081C15;

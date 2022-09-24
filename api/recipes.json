@@ -1,0 +1,134 @@
+[
+    {
+        "name": "3 Cheese Garlic Bread",
+        "difficulity": "Easy",
+        "servings": 2,
+        "preparationTime": "30 minutes",
+        "image": "garlic-bread.jpg",
+        "ingredients": [
+            {
+                "quantity": 1,
+                "item": "stick of butter softened"
+            },
+            {
+                "quantity": 4,
+                "item": "cloves garlic, minced"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup parmesan cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup shredded monterey jack cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup shredded cheddar cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup fresh green onion, sliced"
+            },
+            {
+                "quantity": 1,
+                "item": "baguette, 8 inch (20 cm)"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "In a bowl, combine all of the ingredients except the baguette, and mix until smooth.",
+            "Slice the baguette in half lengthwise, then spread the butter mixture evenly on both sides of the baguette.",
+            "Place on a tray lined with parchment paper and bake for about 15 minutes, until cheese is bubbly and starting to brown on the edges.",
+            "Slice, cool, then serve."
+        ]
+    },
+    {
+        "name": "Tacos",
+        "difficulity": "Easy",
+        "servings": 2,
+        "preparationTime": "30 minutes",
+        "image": "garlic-bread.jpg",
+        "ingredients": [
+            {
+                "quantity": 1,
+                "item": "stick of butter softened"
+            },
+            {
+                "quantity": 4,
+                "item": "cloves garlic, minced"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup parmesan cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup shredded monterey jack cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup shredded cheddar cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup fresh green onion, sliced"
+            },
+            {
+                "quantity": 1,
+                "item": "baguette, 8 inch (20 cm)"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "In a bowl, combine all of the ingredients except the baguette, and mix until smooth.",
+            "Slice the baguette in half lengthwise, then spread the butter mixture evenly on both sides of the baguette.",
+            "Place on a tray lined with parchment paper and bake for about 15 minutes, until cheese is bubbly and starting to brown on the edges.",
+            "Slice, cool, then serve."
+        ]
+    },
+    {
+        "name": "Queso",
+        "difficulity": "Easy",
+        "servings": 2,
+        "preparationTime": "30 minutes",
+        "image": "garlic-bread.jpg",
+        "ingredients": [
+            {
+                "quantity": 1,
+                "item": "stick of butter softened"
+            },
+            {
+                "quantity": 4,
+                "item": "cloves garlic, minced"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup parmesan cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup shredded monterey jack cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup shredded cheddar cheese"
+            },
+            {
+                "quantity": 0.3,
+                "item": "cup fresh green onion, sliced"
+            },
+            {
+                "quantity": 1,
+                "item": "baguette, 8 inch (20 cm)"
+            }
+        ],
+        "instructions": [
+            "Preheat oven to 400°F (200°C).",
+            "In a bowl, combine all of the ingredients except the baguette, and mix until smooth.",
+            "Slice the baguette in half lengthwise, then spread the butter mixture evenly on both sides of the baguette.",
+            "Place on a tray lined with parchment paper and bake for about 15 minutes, until cheese is bubbly and starting to brown on the edges.",
+            "Slice, cool, then serve."
+        ]
+    }
+]
