@@ -186,7 +186,7 @@ div > section h1 {
 }
 
 h1 + p {
-  text-shadow: 2px 2px 7px black;
+  text-shadow: 7px 7px 7px black;
 }
 
 @media only screen and (max-width: 375px) {

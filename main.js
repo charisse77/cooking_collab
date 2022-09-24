@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var count = 0;
+    var count = -1;
     //Build card
     //foreach recipe in the array build a card 
 
@@ -24,18 +24,18 @@ $(document).ready(function () {
                             <p>Difficulty: <span class="difficultyLevel">${recipe.difficulity}</span></p>
                             <p>View Recipe:
                                 <label class="switch">
-                                    <input type="checkbox" id="myBtn">
+                                    <input type="checkbox" id="myBtn${i}">
                                     <span class="slider round"></span>
                                 </label>
                             </p>
-                            <div id="full-recipe">
+                            <div id="full-recipe${i}" style="display:none">
                                 <p>Ingredients:
-                                <ul id="ingredientList">
+                                <ul id="ingredient-list${i}">
                                     <!-- display the courses as list items -->
                                 </ul>
                                 </p>
                                 <p>Instructions:
-                                <ul id="instructionList">
+                                <ul id="instruction-list${i}">
                                     <!-- display the courses as list items -->
                                 </ul>
                                 </p>
@@ -51,31 +51,53 @@ $(document).ready(function () {
 
 
             //render lists 
+            cookbook.forEach((recipe, i) => {
+                count = count + 1; 
+                console.log(count);
+                var btn = document.getElementById("myBtn"+count);
+                var fullRecipe = document.getElementById("full-recipe"+count);
+                $(btn).click(function(){
+                    
+                    if (fullRecipe.style.display === "none") {
+                        fullRecipe.style.display = "block";
 
-            $("#myBtn").click(function () {
-                count = count + 1;
-                renderLists(cookbook);;
-            })
+                    } else {
+                        fullRecipe.style.display = "none";
+                    }
+                })
+
+            });
+
+
+
+            // var btn = document.getElementById("myBtn"+count);
+            // console.log(btn);
+            // $("#myBtn0").click(function () {
+            //     count = count + 1;
+            //     console.log(count)
+
+            //    //renderLists(cookbook);;
+            // })
         }
     });
 
 
-    function renderLists(data) {
-        var fullRecipe = document.getElementById("full-recipe");
-        if (fullRecipe.style.display === "none") {
-            fullRecipe.style.display = "block";
+    // function renderLists(data) {
+    //     var fullRecipe = document.getElementById("full-recipe0");
+    //     if (fullRecipe.style.display === "none") {
+    //         fullRecipe.style.display = "block";
 
-        } else {
-            fullRecipe.style.display = "none";
-        }
+    //     } else {
+    //         fullRecipe.style.display = "none";
+    //     }
 
-        if (count == 1) {
-            console.log(count);
-            data[0].ingredients.forEach(element => $("#ingredient-list").append("<li>" + element.quantity + " " + element.item + "</li>"));
-            data[0].instructions.forEach(element => $("#instruction-list").append("<li>" + element + "</li>"));
-        }
+    //     if (count == 1) {
+    //         console.log(count);
+    //         data[0].ingredients.forEach(element => $("#ingredient-list").append("<li>" + element.quantity + " " + element.item + "</li>"));
+    //         data[0].instructions.forEach(element => $("#instruction-list").append("<li>" + element + "</li>"));
+    //     }
 
-    }
+    // }
 
 
 
