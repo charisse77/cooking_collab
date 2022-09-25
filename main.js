@@ -12,7 +12,7 @@ $(document).ready(function () {
 
             //build card
             cookbook.forEach((recipe, i) => {
-                const card = `<div class="row p-4" data-index=${i}>
+                const card = `<div class="row m-3" data-index=${i}>
                 <section class="col-md-4 mb-3">
                     <div class="card recipeCard" style="width: 18rem;">
                         <img class="card-img-top" src="images/${recipe.image}" alt="Card image cap">
@@ -53,55 +53,33 @@ $(document).ready(function () {
             //render lists 
             cookbook.forEach((recipe, i) => {
                 count = count + 1; 
-                console.log(count);
                 var btn = document.getElementById("myBtn"+count);
                 var fullRecipe = document.getElementById("full-recipe"+count);
                 $(btn).click(function(){
-                    
+                count = count + 1; 
+                console.log(count);
                     if (fullRecipe.style.display === "none") {
                         fullRecipe.style.display = "block";
 
                     } else {
                         fullRecipe.style.display = "none";
                     }
+
+                    //if this button has not been clicked render list
+
+
+
+
+
                 })
+
+                cookbook[i].ingredients.forEach(element => $("#ingredient-list"+[i]).append("<li>" + element.quantity + " " + element.item + "</li>"));
+                cookbook[i].instructions.forEach(element => $("#instruction-list"+[i]).append("<li>" + element + "</li>"));
 
             });
 
 
-
-            // var btn = document.getElementById("myBtn"+count);
-            // console.log(btn);
-            // $("#myBtn0").click(function () {
-            //     count = count + 1;
-            //     console.log(count)
-
-            //    //renderLists(cookbook);;
-            // })
         }
     });
-
-
-    // function renderLists(data) {
-    //     var fullRecipe = document.getElementById("full-recipe0");
-    //     if (fullRecipe.style.display === "none") {
-    //         fullRecipe.style.display = "block";
-
-    //     } else {
-    //         fullRecipe.style.display = "none";
-    //     }
-
-    //     if (count == 1) {
-    //         console.log(count);
-    //         data[0].ingredients.forEach(element => $("#ingredient-list").append("<li>" + element.quantity + " " + element.item + "</li>"));
-    //         data[0].instructions.forEach(element => $("#instruction-list").append("<li>" + element + "</li>"));
-    //     }
-
-    // }
-
-
-
-
-
 });
 
