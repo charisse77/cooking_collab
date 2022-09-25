@@ -64,18 +64,9 @@ $(document).ready(function () {
                     } else {
                         fullRecipe.style.display = "none";
                     }
-
-                    //if this button has not been clicked render list
-
-
-
-
-
                 })
-
                 cookbook[i].ingredients.forEach(element => $("#ingredient-list"+[i]).append("<li>" + element.quantity + " " + element.item + "</li>"));
                 cookbook[i].instructions.forEach(element => $("#instruction-list"+[i]).append("<li>" + element + "</li>"));
-
             });
 
 
