@@ -1,12 +1,9 @@
 $(document).ready(function () {
 //get form info
 var $name = $('#recipe_title');
-
+//use local storage to pass info
+//https://www.youtube.com/watch?v=k8yJCeuP6I8
 //validate form info 
-
-//save form info to js file
-//https://dev.to/amjadmh73/submit-html-forms-to-json-apis-easily-137l
-//upload image????
 
 
 $("#submit").click(function(){
@@ -15,21 +12,9 @@ $("#submit").click(function(){
         name: $name.val()
     }
 
-    $.ajax({
-        type: 'POST',
-        url: 'api/recipes.json',
-        data: recipe, 
-        success: function(newRecipe) {
-            console.log($name);
-        },
-        error: function(){
-            console.log("error")
-        }
-        });
+
+
 
     });
- 
-
-
 });
 
