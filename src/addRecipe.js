@@ -1,6 +1,11 @@
+import * as fs from 'fs';
 $(document).ready(function () {
-
 //get form info
+const fs = require('fs');
+const result = fs.readFileSync('api/recipes.json', {encoding: 'utf-8'});
+console.log(result);
+
+
 var $name = $('#recipe_title');
 
 //validate form info 
@@ -21,7 +26,7 @@ $("#submit").click(function(){
         url: 'api/recipes.json',
         data: recipe, 
         success: function(newRecipe) {
-            console.log("success");
+            console.log(newRecipe);
         },
         error: function(){
             console.log("error")
